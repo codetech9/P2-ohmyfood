@@ -1,0 +1,215 @@
+/* body */
+body {
+ font-family: Inter, sans-serif;
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ max-width: 676px;
+}
+
+* a {
+  text-decoration: none;
+}
+
+.logo-ohmyfood {
+  text-align: center;
+  display: block;
+  padding: 10px;
+}
+
+#location {
+  background-color: #eaeaea;
+  text-align: center;
+  padding: 15px;
+}
+
+#introduction {
+  background-color: #f7f7f7;
+  text-align: center;
+  padding: 35px ;
+  margin: 0;
+}
+
+h1{
+  margin: 0;
+}
+
+.btn {
+  text-align: center;
+  color: white;
+  background: linear-gradient(to right, #9356dc, #9356dc);
+  background-color: #9356dc;
+  text-decoration: none;
+  border-radius: 30px;
+  padding: 5px 15px;
+  margin: 50px auto;
+}
+
+.btn-cmd {
+  display: block;
+  width: 25%;
+}
+
+/* BLOCK FONCTIONNEMENT */
+.fonctionnement-list{
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  text-align: center;
+  margin: 30px auto;
+  padding: 0;
+}
+.fonctionnement-list li{
+  border: 1px solid green;
+  display: flex;
+  justify-content:space-evenly;
+  width: 100%;
+  border-radius: 30px;
+  padding: 10px;
+  margin: 5px auto;
+  background-color: #f7f7f7;
+}
+
+.fonctionnement-list .fa-solid {
+  color: #9356dc;
+}
+
+.number {
+  background-color: #9356dc;
+  color: white;
+  border-radius: 50%;
+  padding: 5px 10px;
+}
+
+/* BLOCK RESTAURANTS */
+
+
+
+.restaurants {
+  background-color: #f7f7f7;
+}
+
+#main {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+
+
+
+.restaurant-card {
+  margin: 50px  auto;
+  width: 100%;
+  max-width: 600px;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+  background-color: white;
+}
+
+.card-label {
+  position: relative;
+}
+
+.restaurant-card img{
+  width: 100%;
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+  max-height: 275px;
+}
+
+.new {
+  background-color: #99E2D0;
+  color: #008766;
+  position: absolute;
+  top: 2px;
+  right: 20px;
+}
+
+/* restaurant-card-description */
+.restaurant-card-description {
+  margin-top: 0;
+  color: black;
+  background-color: white;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-around;
+  height: 80px;
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #353535;
+  color: #fff;
+}
+
+.logo-ohmyfood-footer {
+  color: #fff;
+  margin-left: 40px;
+}
+
+.footer ul li{
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.footer ul li a {
+  color: #fff;
+}
+
+
+/* restaurants show */
+.banner{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
+.menus-bkg {
+  background-color:#f7f7f7;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+.menu-card {
+  background-color: white;
+  padding: 0 15px;
+  margin: 15px auto;
+  border-radius: 50px;
+}
+
+
+.menu-card-description {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.menu-card h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+}
+
+* hr {
+  width: 50px;
+  background-color: #b2e7da;
+  text-align: left;
+  margin-left: 0;
+  border: none;
+  height: 3px;
+}
+
+/* price */
+
+.price {
+  font-weight: bold;
+}
