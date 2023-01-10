@@ -38,20 +38,44 @@
   <div id= "introduction">
     <div>
       <h1>Réservez le menu qui vous convient</h1>
-      <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+      <p class="intro-description">Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
     </div>
     <button href="btn" class="btn">Explorer nos restaurants</button>
   </div>
 
   <!--section Fonctionnement -->
-  <section class="fonctionnement">
-    <h2>Fonctionnement</h2>
-    <ul class="fonctionnement-list">
-      <li><span class="number">1</span> <i class="fa-solid fa-mobile-screen"></i> </span> <span>Choissisez un restaurant</span> </li>
-      <li><span class="number">2</span> <i class="fa-solid fa-list-ul"></i></span> <span> Composez votre menu</span> </li>
-      <li><span class="number">3</span> <i id="purple" class="fa-solid fa-store"></i> </span> <span> Dégustez au restaurant</span> </li>
-    </ul>
-  </section>
+  <div class="fonctionnement">
+    <div class="fonctionnement-header">
+        <h2>Fonctionnement</h2>
+    </div>
+    <div class="fonctionnement-blocks">
+    <!-- f1 -->
+    <div class="fonctionnement-list">
+        <span class="number">1</span>
+        <p class="fonctionnement-icon purples">
+          <i class="fa-solid fa-mobile-screen"></i>
+        </p>
+        <p>Choissisez un restaurant</p>
+    </div>
+    <!-- f2 -->
+    <div class="fonctionnement-list">
+      <span class="number">2</span>
+      <div class="fonctionnement-icon purples">
+        <i class="fa-solid fa-list-ul"></i>
+      </div>
+      <p>Composez votre menu</p>
+     </div>
+     <!-- f3 -->
+     <div class="fonctionnement-list">
+       <span class="number">3</span>
+       <div class="fonctionnement-icon">
+         <i id="purple" class="fa-solid fa-store"></i>
+       </div>
+       <p>Dégustez au restaurant</p>
+    </div>
+  </div>
+  </div>
+
   <!-- Section restaurants -->
   <section class="restaurants">
       <h2>Restaurants</h2>

@@ -61,54 +61,55 @@ body {
 
  /* BLOCK FONCTIONNEMENT */
 
- .fonctionnement-list{
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   flex-wrap: wrap;
-   text-align: center;
-   margin: 1rem;
- }
+.fonctionnement {
+  margin: 1rem;
+  padding: 2rem;
+}
 
- .fonctionnement-list li{
-   display: flex;
-   justify-content: space-around;
-   box-shadow: 1px 1px 10px 1px rgb(0 0 0 / 20%);
-   border-radius: 10px;
-   padding: 10px;
-   background-color: #f7f7f7;
-   width: 100%;
-   position: relative;
-   padding: 1rem;
-   margin-bottom: 1rem;
- }
+.fonctionnement-list {
+  box-shadow: 1px 1px 10px 1px rgb(0 0 0 / 25%);
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  margin: 1rem;
+  border-radius: 10px;
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
 
- #mg-desc {
-   margin-left: 14px
- }
 
- .fonctionnement-list li  .fa-solid {
-   position: absolute;
-   left: 50px;
- }
+.number {
+  background-color:#9356dc;
+  color: white;
+  border-radius: 50%;
+  height: 25px;
+  width: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto;
+  margin-bottom: auto;
+  position: relative;
+  left: -1rem;
+}
 
- .fonctionnement-list li #purple {
-   color: #9356dc;
- }
+.fonctionnement-icon {
+ margin: auto 15px auto 2px;
+}
 
- .number {
-   background-color: #9356dc;
-   color: white;
-   border-radius: 50%;
-   padding: 2px 8px;
-   position: absolute;
-   left: -10px;
- }
+.desc-flex {
+  display: flex;
+}
+
+.fonctionnement-list:hover .purples {
+  color: #9356dc;
+}
+
+#purple {
+  color: #9356dc;
+}
 
  /* BLOCK RESTAURANTS */
-
-
-
  .restaurants {
    background-color: #f7f7f7;
  }
@@ -212,9 +213,6 @@ body {
 
 
 
-
-
-
  /* Footer */
  .footer {
    display: flex;
@@ -240,12 +238,19 @@ body {
    color: #fff;
  }
 
- /* restaurants show */
 
+
+ /* Restaurants Pages  */
+
+ h1{
+  font-weight: 300;
+  font-size: 1.5rem;
+ }
  .menu-h1 {
-   display: flex;
-   justify-content: center;
-   align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
  }
 
  .menu-h1 i{
@@ -253,6 +258,10 @@ body {
    font-size: 1rem;
  }
 
+.intro-description {
+  font-weight: 300;
+  font-size: 1rem;
+}
 
  .banner{
    width: 100%;
@@ -303,17 +312,18 @@ body {
 
 
  .menu-card {
-   border-radius: 10px;
-   line-height: 10%;
-   margin-bottom: 1rem;
-   box-shadow: 0.25rem 0.25rem 1rem rgb(0 0 0 / 10%);
-   padding-top: 5px;
-   padding-left: 20px;
-   display: flex;
+  border-radius: 10px;
+  line-height: 10%;
+  margin-bottom: 1rem;
+  box-shadow: 0.25rem 0.25rem 1rem rgb(0 0 0 / 10%);
+  padding-top: 5px;
+  padding-left: 20px;
+  display: flex;
   justify-content: space-between;
   flex-direction: row;
   overflow:hidden;
   cursor: pointer;
+  animation: fade 2s;
  }
 
 
@@ -370,6 +380,20 @@ body {
 .menu-card:hover .check-ctn  p .fa-solid{
   animation-name: rotations;
   animation: rotations 1s;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+    z-index: -1;
+    transform: translateY(1rem);
+  }
+
+  100% {
+    opacity: 1;
+    z-index: 0;
+    transform: translateY(0);
+  }
 }
 
 
